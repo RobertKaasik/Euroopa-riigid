@@ -145,7 +145,6 @@ def globle():
                 print("Тирана")
             elif a.title() =="Финляндия":
                 print("Хельсинки")
-
             elif a.title() =="Амстердам":
                 print("Нидерланды")
             elif a.title() =="Андорра-ла-Велья":

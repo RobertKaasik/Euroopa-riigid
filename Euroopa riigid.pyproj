@@ -22,6 +22,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Euroopa_riigid.py" />
+    <Compile Include="module.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Capitals.txt" />
+    <Content Include="Country.txt" />
+    <Content Include="riigid_pealinnad.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

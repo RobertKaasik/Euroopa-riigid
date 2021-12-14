@@ -65,3 +65,4 @@ for country in Countries:
                 l=input("Введите правильно столицу: ")
                 Capitals.pop(country)
                 Capitals.update({o: l})
+                https://github.com/VadimZakablutski/sipsiki/blob/master/spsiki.py

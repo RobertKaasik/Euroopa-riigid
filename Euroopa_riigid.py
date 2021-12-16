@@ -52,17 +52,24 @@ for country in Countries:
     if country in Capitals:
         print("Столица страны "+country+": " +Capitals[country])
     else:
-        print("В Европе есть такая страна или вы ввели страну которая находиться не в Европейском союзе " +country)
-        v=input("Хотите внести " +country+ " в нашу коллекцию?\n1-[Да] или 0-[Нет]? ")
-        if v=="1":
-            ca=input("Введите столицу страны " +country+": ")
-            Capitals.update({country: ca})
-            p=input("У нас произошла ошибка, хотите исправить её?\n1-[Да] или 0-[Нет]? ")
-            if p=="0":
+        print("В Европе нет такой страны или вы ввели страну которая находиться не в Европейском союзе " +country)
+        a=input("Хотите внести " +country+ " в нашу коллекцию?\n1-[Да] или 0-[Нет]?\n ")
+        if a=="1":
+            c=input("Введите столицу страны " +country+": ")
+            Capitals.update({country: c})#update()вставляет указанные элементы в словаре.
+            b=input("У нас могуть быть ошибки, хотите исправить её?\n1-[Да] или 0-[Нет]? ")
+            if b=="0":
                 print("Адьйос Амиго")
-            if p=="1":
-                o=input("Введите правильно страну: ")
+            if b=="1":
+                b=input("Введите правильно страну: ")
                 l=input("Введите правильно столицу: ")
-                Capitals.pop(country)
-                Capitals.update({o: l})
-                https://github.com/VadimZakablutski/sipsiki/blob/master/spsiki.py
+                Capitals.pop(country)#pop()принимает один аргумент (индекс).
+                Capitals.update({b: l})#update()вставляет указанные элементы в словаре.
+        if a=="0":
+            print("Адьйос Амиго")
+    d=input("Хотите ли вы слушать Страны от программы чтобы учить страны? 1-[Да] 0-[Нет]? ")
+    if d=="1":
+        Voice()
+    if d=="0":
+        print("Адьйос Амиго")
+                
